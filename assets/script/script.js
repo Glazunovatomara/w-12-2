@@ -4,7 +4,6 @@ const comment = document.getElementById('comment');
 const template = document.getElementById('template');
 const chatList = document.querySelector('.content__comment_chat');
 
-
 const firstNameValue = firstName.value;
 const avatarValue = avatar.value;
 const commentValue = comment.value;

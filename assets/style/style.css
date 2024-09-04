@@ -45,10 +45,12 @@
     border: 1px solid #4128bb;
     outline-color: #4128bb;
     color: #4128bb;
+    resize: none;
 }
 .content__comment_form-btn {
     max-width: 300px;
     width: 100%;
+    margin-top: 10px;
     padding: 10px;
     text-transform: uppercase;
     border-radius: 9px;
