@@ -25,10 +25,14 @@
             </form>
             <div class="content__comment_chat">
                 <h2 class="content__comment_chat-title">чат</h2>
-                <template id="template">
-                    <img class="template_img" src=". " alt=" " id="img_avatar"/>
-                    <h3 id="template_name"></h3>
-                    <p id="template_text"></p>
+                <template class="content__comment_chat-template template__chat" id="template">
+                    <div class="template__chat_section">
+                        <div class="template__chat_section-info">
+                            <img class="template_img" src=". " alt=" " id="img_avatar"/>
+                            <h3 id="template_name"></h3>
+                        </div>
+                        <p id="template_text"></p>
+                    </div>
                 </template>
             </div>
         </section>
