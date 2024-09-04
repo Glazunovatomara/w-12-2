@@ -7,10 +7,12 @@
     width: 100%;
     padding: 20px;
     margin: 0 auto;
+    background-color: #90fbff3e;
 }
 .main__comment_title {
     text-transform: uppercase;
     text-align: center;
+    color: #4128bb;
 }
 .main__comment_content {
     display: flex;
@@ -18,7 +20,8 @@
     gap: 20px;
     justify-content: space-between;
 }
-.content__comment_form {
+.content__comment_form,
+.content__comment_chat {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -28,6 +31,7 @@
     background: #3b1ec3;
     background: radial-gradient(circle, #3b1ec3 0%, #da1fbb 50%, #90fcff 100%); 
     color: #ffffff;
+    box-shadow: 0px 0px 10px 2px #3b1ec3;
 }
 .content__comment_form-title {
     text-transform: uppercase;
@@ -46,6 +50,7 @@
     outline-color: #4128bb;
     color: #4128bb;
     resize: none;
+    background-color: #e9f2f278;
 }
 .content__comment_form-btn {
     max-width: 300px;
@@ -61,16 +66,6 @@
 }
 .content__comment_form-btn:hover {
     box-shadow: 0px 0px 0px 2px #3b1ec3;
-}
-.content__comment_chat {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    padding: 20px;
-    border-radius: 9px;
-    background: #3b1ec3;
-    background: radial-gradient(circle, #3b1ec3 0%, #da1fbb 50%, #90fcff 100%);
-    color: #ffffff;
 }
 .content__comment_chat-title {
     text-transform: uppercase;
