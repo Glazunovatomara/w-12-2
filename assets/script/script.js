@@ -11,9 +11,8 @@ const showMessage = () => {
 
     const nameRight = firstNameValue[0].toUpperCase() + firstNameValue.slice(1).toLowerCase();
 
-    if ( commentValue.toLowerCase().indexOf('xxx' || commentValue.toLowerCase().indexOf('viagra')) !== -1) {
-        commentValue = commentValue.replace(/viagra/ig, '***');
-        commentValue = commentValue.replace(/xxx/ig, '***');
+    if ( commentValue.toLowerCase().includes('xxx') || commentValue.toLowerCase().includes('viagra')) {
+        commentValue = commentValue.replace(/viagra/ig, '***').replace(/xxx/ig, '***');
     }
     
     const templateNew = template.content.cloneNode(true);
