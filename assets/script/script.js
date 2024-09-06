@@ -10,6 +10,10 @@ const showMessage = () => {
     let commentValue = comment.value;
 
     const currentDate = new Date();
+
+    const options = { weekday: 'short'};
+    const toDayOfWeek = currentDate.toLocaleString('ru-RU', options);
+
     const date = currentDate.getDate();
     const month = currentDate.getMonth();
 
@@ -56,7 +60,7 @@ const showMessage = () => {
     templateNew.getElementById('img_avatar').src = avatarValue;
     templateNew.getElementById('template_name').textContent = nameRight;
     templateNew.getElementById('template_text').textContent = commentValue;
-    templateNew.getElementById('date').textContent = `${date}.${currentMonth}.${year}, ${hours}:${min}`;
+    templateNew.getElementById('date').textContent = `${toDayOfWeek.toUpperCase()} ${date}.${currentMonth}.${year}, ${hours}:${min}`;
     chatList.append(templateNew);
 
     firstName.value = '';
