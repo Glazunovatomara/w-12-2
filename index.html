@@ -12,7 +12,15 @@
         <section class="main__comment_content content__comment">
             <form class="content__comment_form">
                 <h2 class="content__comment_form-title">оставьте ваш комментарий</h2>
-                <label class="content__comment_form-subtitle">Введите ваше Имя:
+                <label class="content__comment_form-subtitle">Показать ваше имя? 
+                    <label>no
+                        <input type="radio" value="no" name="radio" id="no">
+                    </label>
+                    <label>yes
+                        <input type="radio" value="yes"  name="radio" checked>
+                    </label>
+                </label>
+                <label class="content__comment_form-subtitle" id="hidden">Введите ваше Имя:
                     <input class="content__comment_form-input" type="text" id="firstName" value="" />
                 </label>
                 <label class="content__comment_form-subtitle">Введите ссылку вашего аватара:

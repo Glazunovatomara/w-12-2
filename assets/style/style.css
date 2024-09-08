@@ -41,6 +41,9 @@
     flex-direction: column;
     gap: 10px;
 }
+.content__comment_form-subtitle:first-of-type {
+    flex-direction: row;
+}
 .content__comment_form-input {
     max-width: 500px;
     width: 100%;
