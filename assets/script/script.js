@@ -3,20 +3,28 @@ const avatar = document.getElementById('avatar');
 const comment = document.getElementById('comment');
 const template = document.getElementById('template');
 const chatList = document.querySelector('.content__comment_chat');
-const radio = document.getElementById('no');
+const radioNo = document.getElementById('no');
+const radioYes = document.getElementById('yes')
 
+
+//под заголовком «Оставьте ваш комментарий» должен быть чекбокс, который даёт выбор показывать ваше имя в комментарии или нет;
 const hiddenBlock = () => {
     const hidden = document.getElementById('hidden');
 
-    if(radio.checked === true) {
+    if(radioNo.checked === true) {
         hidden.style.display = 'none'
-    } else {
+    } 
+};
+radioNo.addEventListener('click', hiddenBlock)
+
+const showBlock = () => {
+    const hidden = document.getElementById('hidden');
+
+    if(radioYes.checked === true) {
         hidden.style.display = 'flex'
     }
-};
-
-radio.addEventListener('click', hiddenBlock())
-
+}
+radioYes.addEventListener('click', showBlock)
 
 const showMessage = () => {
     let firstNameValue = firstName.value;
@@ -50,10 +58,10 @@ const showMessage = () => {
     }
     
     const templateNew = template.content.cloneNode(true);
-    templateNew.getElementById('img_avatar').src = avatarValue;
-    templateNew.getElementById('template_name').textContent = firstNameValue;
-    templateNew.getElementById('template_text').textContent = commentValue;
-    templateNew.getElementById('date').textContent = `${date.toLowerCase()} ${time}`;
+    templateNew.querySelector('.template_img').src = avatarValue;
+    templateNew.querySelector('.template_name').textContent = firstNameValue;
+    templateNew.querySelector('.template_text').textContent = commentValue;
+    templateNew.querySelector('.template_date').textContent = `${date.toLowerCase()} ${time}`;
     chatList.append(templateNew); 
 
     firstName.value = '';
@@ -63,5 +71,3 @@ const showMessage = () => {
 
 const button = document.getElementById('btn');
 button.addEventListener('click', showMessage);
-
-//под заголовком «Оставьте ваш комментарий» должен быть чекбокс, который даёт выбор показывать ваше имя в комментарии или нет;
