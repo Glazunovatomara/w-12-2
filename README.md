@@ -15,4 +15,4 @@
 [Томара](https://github.com/Glazunovatomara)
 
 ## Результат
-[Потестить](glazunovatomara.github.io/w-18/) 👈
+[Потестить](glazunovatomara.github.io/w-12-2/) 👈
